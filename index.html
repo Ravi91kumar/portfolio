@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Kumar Portfolio</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="container fade-in">
+
+<header class="topbar">
+  <h1>Ravi Kumar — Developer Portfolio</h1>
+  <button id="themeToggle">🌙 Theme</button>
+</header>
+
+<section class="hero slide-in">
+  <img id="profileImg" src="https://via.placeholder.com/150" />
+  <div>
+    <h2>Full Stack Developer</h2>
+    <p>I build dynamic web applications and ML-based solutions.</p>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+    <p><b>Visitors:</b> <span id="visitorCount">0</span></p>
+  </div>
+</section>
+
+<h2>Projects</h2>
+<div id="projects">Loading projects...</div>
+
+<h2>Blog</h2>
+<div id="blogs"></div>
+
+<h2>Contact Me</h2>
+<form id="contactForm" class="card">
+<input name="name" placeholder="Name" required>
+<input name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<h2>Admin Dashboard</h2>
+<div class="dashboard">
+
+<div class="card">
+<h3>Create Blog</h3>
+<input id="blogTitle" placeholder="Title">
+<textarea id="blogContent" placeholder="Content"></textarea>
+<input id="blogImage" placeholder="Image URL">
+<button onclick="addBlog()">Publish</button>
+</div>
+
+<div class="card">
+<h3>Contact Inbox</h3>
+<div id="inbox"></div>
+</div>
+
+<div class="card">
+<h3>Profile Image</h3>
+<input id="profileUrl" placeholder="Image URL">
+<button onclick="updateProfile()">Update</button>
+</div>
+
+</div>
+
+<footer>
+© 2026 Ravi Kumar
+</footer>
+
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
